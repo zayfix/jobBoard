@@ -1,0 +1,11 @@
+index:
+  path: /
+  controller: App\Controller\IndexController::index
+
+data:
+  path: /register
+  controller: App\Controller\IndexController::add
+
+read:
+  path: /read
+  controller: App\Controller\IndexController::readUser

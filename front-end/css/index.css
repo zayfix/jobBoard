@@ -1,0 +1,208 @@
+#job-informations {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+}
+
+#money_icon {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#wage {
+    grid-column: 1/2;
+    grid-row: 2/2;
+}
+
+#place_icon {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#place {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#schedule_icon {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#schedule {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#company_icon {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+#company {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.card-content {
+    height: 110px;
+}
+
+.card-content>p {
+    line-height: 1.5em;
+    height: 3em;
+    overflow: hidden;
+}
+
+.active-description {
+    overflow: visible !important;
+}
+
+.active-card {
+    -webkit-animation: expandJob 1s 1;
+    -moz-animation: expandJob 1s 1;
+    -o-animation: expandJob 1s 1;
+    animation: expandJob 1s 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+#sidenav {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#searchbar {
+    background-color: #546e7a !important;
+}
+
+.input-field input[type="search"]:focus:not(.browser-default) {
+    background-color: #546e7a !important;
+}
+
+input[type="search"] {
+    width: 80% !important;
+    margin: 0 auto !important;
+}
+
+.collapsible-header {
+    justify-content: center;
+}
+/* Safari 4+ */
+@-webkit-keyframes expandJob {
+    0% {
+        height: 200px;
+    }
+
+    100% {
+        height: 300px;
+    }
+}
+
+/* Fx 5+ */
+@-moz-keyframes expandJob {
+    0% {
+        height: 200px;
+    }
+
+    100% {
+        height: 300px;
+    }
+}
+
+/* Opera 12+ */
+@-o-keyframes expandJob {
+    0% {
+        height: 200px;
+    }
+
+    100% {
+        height: 300px;
+    }
+}
+
+/* IE 10+, Fx 29+ */
+@keyframes expandJob {
+    0% {
+        height: 200px;
+    }
+
+    100% {
+        height: 300px;
+    }
+}
+
+.active-button {
+    -webkit-animation: expandJobButton 1s 1;
+    -moz-animation: expandJobButton 1s 1;
+    -o-animation: expandJobButton 1s 1;
+    animation: expandJobButton 1s 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+/* Safari 4+ */
+@-webkit-keyframes expandJobButton {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 120px;
+    }
+}
+
+/* Fx 5+ */
+@-moz-keyframes expandJobButton {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 120px;
+    }
+}
+
+/* Opera 12+ */
+@-o-keyframes expandJobButton {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 120px;
+    }
+}
+
+/* IE 10+, Fx 29+ */
+@keyframes expandJobButton {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 120px;
+    }
+}
+
+/* css administration */
+#Button
+{
+    grid-column: 2/2;
+    grid-row: 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Table {
+    grid-column: 2/3;
+    grid-row: 3;
+}
